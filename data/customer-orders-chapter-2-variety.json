@@ -1,0 +1,231 @@
+[
+  // ----- 15 VALID ORDERS -----
+  {
+    "orderId": "40001",
+    "customerName": "Alice Johnson",
+    "status": "Pending",
+    "totalAmount": 0,
+    "email": "alice.johnson@example.com",
+    "phoneNumber": "+1-555-123-0001",
+    "items": []
+  },
+  {
+    "orderId": "40002",
+    "customerName": "Michael O'Neil",
+    "status": "Shipped",
+    "totalAmount": 2499.99,
+    "email": "michael.oneil@example.com",
+    "phoneNumber": "+1-555-234-0002",
+    "items": [
+      { "name": "High-End Keyboard", "quantity": 1, "price": 2499.99 }
+    ]
+  },
+  {
+    "orderId": "40003",
+    "customerName": "Lina Alvarez",
+    "status": "On Hold",
+    "totalAmount": 58.50,
+    "email": "lina.alvarez@example.com",
+    "phoneNumber": "+57-301-457-0003",
+    "items": [
+      { "name": "Book: Data Science Intro", "quantity": 1, "price": 25.00 },
+      { "name": "Notebook", "quantity": 3, "price": 11.17 }
+    ]
+  },
+  {
+    "orderId": "40004",
+    "customerName": "Johann Schmidt",
+    "status": "Cancelled",
+    "totalAmount": -40.00,
+    "email": "johann.schmidt@example.de",
+    "phoneNumber": "+49-151-678-0004",
+    "items": [
+      { "name": "Wireless Mouse", "quantity": 2, "price": -20.00 }
+    ]
+  },
+  {
+    "orderId": "40005",
+    "customerName": "Priya Patel",
+    "status": "Shipped",
+    "totalAmount": 19.99,
+    "email": "priya.patel@example.in",
+    "phoneNumber": "+91-982-195-0005",
+    "items": [
+      { "name": "Yoga Mat", "quantity": 1, "price": 19.99 }
+    ]
+  },
+  {
+    "orderId": "40006",
+    "customerName": "Yuki Nakamura",
+    "status": "Payment Error",
+    "totalAmount": 0,
+    "email": "yuki.nakamura@example.jp",
+    "phoneNumber": "+81-80-114-0006",
+    "items": []
+  },
+  {
+    "orderId": "40007",
+    "customerName": "Samir Farouk",
+    "status": "Returned",
+    "totalAmount": -199.95,
+    "email": "samir.farouk@example.eg",
+    "phoneNumber": "+20-101-566-0007",
+    "items": [
+      { "name": "Headphones", "quantity": 1, "price": -199.95 }
+    ]
+  },
+  {
+    "orderId": "40008",
+    "customerName": "Anna Müller",
+    "status": "Pending",
+    "totalAmount": 75.60,
+    "email": "anna.mueller@example.de",
+    "phoneNumber": "+49-171-111-0008",
+    "items": [
+      { "name": "Coffee Maker", "quantity": 1, "price": 75.60 }
+    ]
+  },
+  {
+    "orderId": "40009",
+    "customerName": "Enrico Rossi",
+    "status": "Delayed",
+    "totalAmount": 0,
+    "email": "enrico.rossi@example.it",
+    "phoneNumber": "+39-347-812-0009",
+    "items": []
+  },
+  {
+    "orderId": "40010",
+    "customerName": "Fatima Al Habsi",
+    "status": "On Hold",
+    "totalAmount": 149.99,
+    "email": "fatima.alhabsi@example.om",
+    "phoneNumber": "+968-943-221-0010",
+    "items": [
+      { "name": "Smartwatch", "quantity": 1, "price": 149.99 }
+    ]
+  },
+  {
+    "orderId": "40011",
+    "customerName": "Tom Lee",
+    "status": "Shipped",
+    "totalAmount": 35000.00,
+    "email": "tom.lee@example.com",
+    "phoneNumber": "+1-555-334-0011",
+    "items": [
+      { "name": "4K Pro Video Camera", "quantity": 1, "price": 35000.00 }
+    ]
+  },
+  {
+    "orderId": "40012",
+    "customerName": "Chloe Martin",
+    "status": "Pending",
+    "totalAmount": 24.98,
+    "email": "chloe.martin@example.fr",
+    "phoneNumber": "+33-650-677-0012",
+    "items": [
+      { "name": "Travel Mug", "quantity": 2, "price": 12.49 }
+    ]
+  },
+  {
+    "orderId": "40013",
+    "customerName": "Wei Zhang",
+    "status": "Returned",
+    "totalAmount": -55.00,
+    "email": "wei.zhang@example.cn",
+    "phoneNumber": "+86-010-254-0013",
+    "items": [
+      { "name": "Bluetooth Speaker", "quantity": 1, "price": -55.00 }
+    ]
+  },
+  {
+    "orderId": "40014",
+    "customerName": "Lucas Peres",
+    "status": "Cancelled",
+    "totalAmount": -11.50,
+    "email": "lucas.peres@example.br",
+    "phoneNumber": "+55-21-775-0014",
+    "items": [
+      { "name": "Refund: Water Bottle", "quantity": 1, "price": -11.50 }
+    ]
+  },
+  {
+    "orderId": "40015",
+    "customerName": "Olga Ivanova",
+    "status": "Shipped",
+    "totalAmount": 110000.00,
+    "email": "olga.ivanova@example.ru",
+    "phoneNumber": "+7-925-413-0015",
+    "items": [
+      { "name": "Industrial 3D Printer", "quantity": 1, "price": 110000.00 }
+    ]
+  },
+
+  // ----- 6 INVALID ORDERS -----
+  {
+    "orderId": "inv-01",
+    "customerName": "Smith",  // missing firstName
+    "status": "Pending",
+    "totalAmount": 39.99,
+    "email": "smith@example.com",
+    "phoneNumber": "+1-555-444-0101",
+    "items": [
+      { "name": "Desk Lamp", "quantity": 1, "price": 39.99 }
+    ]
+  },
+  {
+    "orderId": "inv-02",
+    "customerName": "Helena Łukaszewicz", // lastName has non-English letters
+    "status": "On Hold",
+    "totalAmount": 77.77,
+    "email": "helena.lukaszewicz@example.pl",
+    "phoneNumber": "+48-501-888-0102",
+    "items": [
+      { "name": "Planner", "quantity": 1, "price": 77.77 }
+    ]
+  },
+  {
+    "orderId": "inv-03",
+    "customerName": "Raj Patel",
+    "status": "Cancelled",
+    "totalAmount": "25.99", // should be number not string
+    "email": "raj.patel@example.in",
+    "phoneNumber": "+91-987-123-0103",
+    "items": [
+      { "name": "Mouse Pad", "quantity": 1, "price": 25.99 }
+    ]
+  },
+  {
+    "orderId": "inv-04",
+    "customerName": "Linda White",
+    "status": "Delayed",
+    "totalAmount": 59.95,
+    "email": "linda.white@example.com",
+    "phoneNumber": "++1-555-999-0104", // two + signs
+    "items": [
+      { "name": "Desk Organizer", "quantity": 1, "price": 59.95 }
+    ]
+  },
+  {
+    "orderId": "inv-05",
+    "customerName": "Pierre Martin",
+    "status": "Processing", // invalid status
+    "totalAmount": 15.00,
+    "email": "pierre.martin@example.fr",
+    "phoneNumber": "+33-155-333-0105",
+    "items": [
+      { "name": "Sticky Notes", "quantity": 5, "price": 3.00 }
+    ]
+  },
+  {
+    "orderId": "inv-06",
+    "customerName": "Julia Brown",
+    "status": "Pending",
+    "totalAmount": 18.00,
+    "email": "julia.brown#example.com", // invalid email format
+    "phoneNumber": "+1-555-333-0106",
+    "items": [
+      { "name": "Scissors", "quantity": 2, "price": 9.00 }
+    ]
+  }
+]
