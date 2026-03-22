@@ -10,7 +10,7 @@ Prompt used:
   "Generate 30 customer orders with an expanded status list, boundary totals, a few intentionally invalid rows flagged as isValid=false, and include email, phoneNumber, and items array fields."
 Observations:
   - Added new statuses to mirror production states.
-  - Introduced 3 invalid rows for validation testing.
+  - Introduced 6 invalid rows for validation testing.
   - Totals include edge boundaries (0, 9999, -12).
   - Each record now includes contact details and an items array.
   - The file stays schema-consistent for valid rows and clearly marks invalid ones.
