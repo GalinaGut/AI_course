@@ -4,11 +4,12 @@
     "orderId": "60001",
     "customerName": "Jordan Conway",
     "status": "Pending",
-    "totalAmount": 0,
+    "totalAmount": 123.33,
     "email": "jordan.conway@samplemail.com",
     "phoneNumber": "+7-101-100-0001",
-    "items": []
-  },
+    "items": [
+      { "name": "4K Video Projector", "quantity": 1, "price": 123.33 }]
+  }, 
   {
     "orderId": "60002",
     "customerName": "Parker Riley",
@@ -57,10 +58,12 @@
     "orderId": "60006",
     "customerName": "Avery Quinn",
     "status": "Payment Error",
-    "totalAmount": 0,
+    "totalAmount": 36.99,
     "email": "avery.quinn@samplemail.com",
     "phoneNumber": "+4-618-666-0006",
-    "items": []
+    "items": [
+       { "name": "Bluetooth Earbuds", "quantity": 2, "price": 36.99 }
+    ]
   },
   {
     "orderId": "60007",
@@ -91,7 +94,9 @@
     "totalAmount": 0,
     "email": "skyler.blake@samplemail.com",
     "phoneNumber": "+3-299-999-0009",
-    "items": []
+    "items": [
+      { "name": "Desk Organizer", "quantity": 4, "price": 19.00 }
+    ]
   },
   {
     "orderId": "60010",
